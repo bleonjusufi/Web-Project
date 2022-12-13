@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UBT University-Join Us</title>
+    <link rel="stylesheet" href="./CSS/loginform.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <a href="./home.html" id="aLogo">
+              <img src="./CSS/Images/logo.png" alt="Logo e Projektit" />
+            </a>
+          </div>
+          <form class="example" action="#">
+            <input type="text" placeholder="Kerko Sherbimet" name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="bg-blue">
+        <div class="container">
+          <div class="header-navigation__list">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+            <li>
+              <a href="./loginform.html" style="border-bottom: 5px solid red"
+                >Join Us</a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="login-form__container">
+        <h1 class="label">Join Us</h1>
+        <form
+          class="login_form"
+          action="./home.html"
+          method="post"
+          name="form"
+          onsubmit="return validated()"
+        >
+          <div class="font">Email Address</div>
+          <input autocomplete="off" type="text" name="email" />
+          <div id="email_error">Please enter your Email Address</div>
+          <div class="font font2">Password</div>
+          <input type="password" name="password" />
+          <div id="pass_error">Please enter your Password</div>
+          <button type="submit" class="log-in__form">Sign Up</button>
+        </form>
+      </div>
+    </main>
+    <script src="./JavaScript/loginform.js"></script>
+  </body>
+</html>
