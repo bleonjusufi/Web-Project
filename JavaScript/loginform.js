@@ -1,39 +1,58 @@
-//Validtion Code For Inputs
+const form = document.getElementById("form");
+const username = document.getElementById("username");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const password2 = document.getElementById("password2");
 
-var email = document.forms["form"]["email"];
-var password = document.forms["form"]["password"];
+//Show input error message
 
-var email_error = document.getElementById("email_error");
-var pass_error = document.getElementById("pass_error");
-
-email.addEventListener("textInput", email_Verify);
-password.addEventListener("textInput", pass_Verify);
-
-function validated() {
-  if (email.value.length < 9) {
-    email.style.border = "1px solid red";
-    email_error.style.display = "block";
-    email.focus();
-    return false;
-  }
-  if (password.value.length < 6) {
-    password.style.border = "1px solid red";
-    pass_error.style.display = "block";
-    password.focus();
-    return false;
-  }
+function showError(input, message) {
+  const formControl = input.parentElement;
+  formControl.className = "form-control error";
+  const small = formControl.querySelector("small");
+  small.innerText = message;
 }
-function email_Verify() {
-  if (email.value.length >= 8) {
-    email.style.border = "1px solid silver";
-    email_error.style.display = "none";
-    return true;
-  }
+
+function showSuccess(input) {
+  const formControl = input.parentElement;
+  formControl.className = "form-control success";
 }
-function pass_Verify() {
-  if (password.value.length >= 5) {
-    password.style.border = "1px solid silver";
-    pass_error.style.display = "none";
-    return true;
-  }
+
+//Email
+
+function isValidEmail(email) {
+  const re =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
 }
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  if (username.value === "") {
+    showError(username, "Emri i përdouesit është i nevojshëm");
+  } else {
+    showSuccess(username);
+  }
+  if (email.value === "") {
+    showError(email, "Adresa Elektronike është e nevojshme");
+  } else if (!isValidEmail(email.value)) {
+    showError(email, "Adresa Elektronike nuk është valide");
+  } else {
+    showSuccess(email);
+  }
+
+  if (password.value === "") {
+    showError(password, "Fjalëkalimi është i nevojshëm");
+  } else {
+    showSuccess(password);
+  }
+  if (password2.value === "") {
+    showError(password2, "Konfimimi i fjalëkalimit është i nevojshëm");
+  } else if (password2.value !== password.value) {
+    showError(password2, "Fjalkalimet nuk përputhen");
+  } else {
+    showSuccess(password2);
+    alert("Regjistrimi u krye me sukses");
+  }
+});

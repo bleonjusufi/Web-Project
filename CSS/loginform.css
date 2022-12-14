@@ -73,73 +73,177 @@ a:hover {
 }
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.login-form__container {
+.log-in__container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  margin-top: 50px;
+}
+h2 {
+  color: var(--main-color);
+  text-align: center;
+  margin: 0 0 20px;
+}
+.form {
+  padding: 30px 40px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
   position: relative;
-  margin-top: 23px;
-  width: 300px;
-  height: 400px;
-  background: white;
-  border-radius: 8px;
 }
-.label {
-  text-align: center;
-  font-size: 25px;
-  font-weight: 700;
-  color: #130f40;
+.form-control label {
+  color: #777;
+  display: block;
+  margin-bottom: 5px;
 }
-.login_form {
-  padding: 20px 40px;
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
 }
-.login_form .font {
-  font-size: 15px;
-  color: #130f40;
-  margin: 5px 0;
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
 }
-.login_form input {
-  height: 40px;
-  width: auto;
-  padding: 0 5px;
-  font-size: 18px;
-  outline: none;
-  border: 1px solid silver;
+.form-control.success input {
+  border-color: green;
 }
-.login_form .font2 {
-  margin-top: 30px;
+.form-control.error input {
+  border-color: red;
 }
-.login_form button {
-  margin-top: 65px;
-  margin-left: 30px;
-  height: 45px;
-  width: 150px;
-  font-size: 20px;
-  color: white;
-  outline: none;
+
+.form-control small {
+  color: var(--error-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error small {
+  color: red;
+  visibility: visible;
+}
+
+.form button {
   cursor: pointer;
-  font-weight: bold;
-  background: #0a223d;
-  border-radius: 8px;
-  border: 1px solid #3949ab;
-  transition: 0.5s;
+  border: 2px sold var(--main-color);
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
 }
-.log-in__form {
-  padding: 0;
+/* footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #0a223d;
+  width: 100%;
+  float: left;
 }
-.login_form button:hover {
-  background: #515ac0;
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  width: 100%;
+  float: left;
 }
-.login_form #email_error,
-.login_form #pass_error {
-  margin-top: 5px;
-  width: auto;
-  font-size: 18px;
-  color: #c62828;
-  background: rgba(255, 0, 0, 0.1);
+.social-media {
+  display: -webkit-inline-box;
+}
+.visible {
+  opacity: 1;
+}
+.ft-title {
+  width: 100%;
+  float: left;
+  margin: 0px 0px 30px 14px;
+}
+.ft-title h5 {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+.col-lg-5 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 41.6%;
+}
+.footer-top ul li {
+  color: white;
+  width: 100%;
+}
+.col-lg-4 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 33.3%;
+}
+.col-lg-3 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 25%;
+}
+.footer-bottom {
+  font-size: 16px;
+  color: white;
   text-align: center;
-  padding: 5px 8px;
-  border-radius: 3px;
-  border: 1px solid #ef9a9a;
-  display: none;
 }
+.social-media {
+  border-top: 2px solid white;
+}
+.fa-map-marker::before {
+  margin-right: 10px;
+}
+.fa-home::before {
+  margin-right: 10px;
+}
+.fa-phone::before {
+  margin-right: 10px;
+}
+.fa-fax::before {
+  margin-right: 10px;
+}
+.fa-address-book::before {
+  margin-right: 10px;
+}
+.fa-envelope::before {
+  margin-right: 10px;
+}
+.fa-sitemap::before {
+  margin-right: 10px;
+}
+.fa-facebook::before {
+  margin-right: 30px;
+  font-size: 25px;
+}
+.fa-instagram::before {
+  margin-right: 30px;
+  font-size: 25px;
+}
+.fa-twitter::before {
+  margin-right: 30px;
+  font-size: 25px;
+}
+.fa-youtube::before {
+  margin-right: 30px;
+  font-size: 25px;
+}
+.fa-linkedin::before {
+  font-size: 25px;
+}
+.social-media__links:hover {
+  border: none;
+} */
