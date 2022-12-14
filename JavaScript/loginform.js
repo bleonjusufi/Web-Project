@@ -56,3 +56,5 @@ form.addEventListener("submit", function (e) {
     alert("Regjistrimi u krye me sukses");
   }
 });
+
+// Done
