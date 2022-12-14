@@ -82,7 +82,7 @@ main {
   margin-top: 50px;
 }
 h2 {
-  color: var(--main-color);
+  color: black;
   text-align: center;
   margin: 0 0 20px;
 }
@@ -118,7 +118,7 @@ h2 {
 }
 
 .form-control small {
-  color: var(--error-color);
+  color: red;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -129,121 +129,21 @@ h2 {
   color: red;
   visibility: visible;
 }
-
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
 .form button {
+  font-weight: 700;
   cursor: pointer;
-  border: 2px sold var(--main-color);
   border-radius: 4px;
-  color: #fff;
   display: block;
   font-size: 16px;
   padding: 10px;
   margin-top: 10px;
-  width: 100%;
+  width: 150px;
 }
-/* footer {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: #0a223d;
-  width: 100%;
-  float: left;
+.cancel-button {
+  background-color: whitesmoke;
+  color: #0a223d;
 }
-.footer-top {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 30px;
-  padding-bottom: 15px;
-  width: 100%;
-  float: left;
-}
-.social-media {
-  display: -webkit-inline-box;
-}
-.visible {
-  opacity: 1;
-}
-.ft-title {
-  width: 100%;
-  float: left;
-  margin: 0px 0px 30px 14px;
-}
-.ft-title h5 {
-  color: white;
-  font-weight: 700;
-  font-size: 20px;
-}
-.col-lg-5 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 41.6%;
-}
-.footer-top ul li {
-  color: white;
-  width: 100%;
-}
-.col-lg-4 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 33.3%;
-}
-.col-lg-3 {
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 25%;
-}
-.footer-bottom {
-  font-size: 16px;
-  color: white;
-  text-align: center;
-}
-.social-media {
-  border-top: 2px solid white;
-}
-.fa-map-marker::before {
-  margin-right: 10px;
-}
-.fa-home::before {
-  margin-right: 10px;
-}
-.fa-phone::before {
-  margin-right: 10px;
-}
-.fa-fax::before {
-  margin-right: 10px;
-}
-.fa-address-book::before {
-  margin-right: 10px;
-}
-.fa-envelope::before {
-  margin-right: 10px;
-}
-.fa-sitemap::before {
-  margin-right: 10px;
-}
-.fa-facebook::before {
-  margin-right: 30px;
-  font-size: 25px;
-}
-.fa-instagram::before {
-  margin-right: 30px;
-  font-size: 25px;
-}
-.fa-twitter::before {
-  margin-right: 30px;
-  font-size: 25px;
-}
-.fa-youtube::before {
-  margin-right: 30px;
-  font-size: 25px;
-}
-.fa-linkedin::before {
-  font-size: 25px;
-}
-.social-media__links:hover {
-  border: none;
-} */
