@@ -62,6 +62,77 @@ a:hover {
 #aLogo {
   border: none;
 }
+.corporate-directors h1 {
+  font-size: 43px;
+  color: #0a223d;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+h3 {
+  margin-top: 15px;
+}
+.corporate-directors .corporate-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.corporate-directors .corporate-members .directors {
+  width: calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.corporate-directors .corporate-members .directors {
+  width: calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.corporate-directors .corporate-members .directors {
+  width: calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.corporate-directors .corporate-members .directors {
+  width: calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.directors img {
+  height: 65%;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  padding: 5px;
+  width: 150px;
+}
+.corporate-directors .corporate-members .directors {
+  width: calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.corporate-directors .corporate-members .directors {
+  width: calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.corporate-directors .corporate-members .directors {
+  width: calc(20% - 10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
 footer {
   margin-right: auto;
   margin-left: auto;

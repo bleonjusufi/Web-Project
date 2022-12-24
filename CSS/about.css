@@ -62,9 +62,54 @@ a:hover {
 #aLogo {
   border: none;
 }
+section {
+  width: 100%;
+  float: left;
+  position: relative;
+}
+.slide-bg {
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 550px;
+  margin-bottom: 15px;
+}
+.slide-bg h1 {
+  font-weight: 700;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 30px;
+  line-height: 32px;
+  width: 100%;
+  background: rgba(17, 45, 78, 0.84);
+  padding: 13px;
+}
+.fk-box-lg {
+  width: 100%;
+  float: left;
+  background-color: #f9f7f7;
+  padding: 15px;
+  position: relative;
+  min-height: auto;
+}
+.fk-box-lg ul {
+  padding-left: 20px;
+  margin: 5px 0 5px 0;
+}
+.fk-box-lg ul li {
+  font-weight: 400;
+  line-height: 27px;
+  list-style: disc;
+  color: #333;
+  max-width: 100%;
+  width: 100%;
+}
 footer {
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
   padding-left: 15px;
   padding-right: 15px;
   background-color: #0a223d;
