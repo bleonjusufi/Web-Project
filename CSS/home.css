@@ -379,3 +379,193 @@ footer {
 .social-media__links:hover {
   border: none;
 }
+@media only screen and (max-width: 390px) {
+  .header-wrapper {
+    border-bottom: 2px solid #0a223d;
+  }
+  #search {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  body.open {
+    overflow: hidden;
+  }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    z-index: 4;
+  }
+  .hamburger span {
+    height: 4px;
+    width: 30px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: red;
+    transition: all 300ms ease-in-out;
+  }
+  .logo {
+    z-index: 4;
+  }
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50px;
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 50px;
+  }
+  form.example {
+    display: none;
+  }
+  .hotel-section__rattings {
+    padding: 0px 6px;
+  }
+  .hotel-section__rattings p.medium {
+    font-size: 12px;
+    line-height: 1em;
+  }
+  .bg-blue {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(7, 18, 32, 0.95);
+    transition: all 0.5s;
+  }
+  .bg-blue--open {
+    top: 0;
+    opacity: 1;
+    z-index: 2;
+  }
+  .header-navigation__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-navigation__list li a {
+    padding: 13px 0px;
+  }
+  .college-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 18px 0 25px 0px;
+  }
+  .college-section__title {
+    margin-left: 35%;
+    font-size: 18px;
+  }
+  .college-section__rating {
+    display: none;
+  }
+  .featured-articles {
+    grid-template-rows: repeat(3, 200px);
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+  .post-item__post-item--big {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .campus {
+    margin-left: 4px;
+    position: absolute;
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    top: 43%;
+  }
+  .erasmus-text {
+    margin-left: 15px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    bottom: 28%;
+  }
+  .info-corner {
+    margin-left: 15px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    bottom: 2%;
+  }
+  .cards-menus__list {
+    display: none;
+  }
+  .oferta-sezonale__title {
+    text-align: center;
+  }
+  .oferta-sezonale__details {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .package-item__description {
+    background-color: whitesmoke;
+    border-radius: 0px 0px 8px 8px;
+    height: 171px;
+    padding: 12px 0 0px 7px;
+  }
+  .package-item__menu {
+    flex-wrap: inherit;
+  }
+  .drejtimet-section {
+    display: grid;
+    row-gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .drejtimet-section__description h4 {
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    line-height: 1em;
+    font-weight: 700;
+    padding-left: 38px;
+    text-align: center;
+    position: relative;
+    align-items: center;
+  }
+  .footer-box {
+    margin: 10px 0 10px 0;
+  }
+  .col-lg-5 {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .col-lg-4 {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+  .col-lg-3 {
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+}
