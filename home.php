@@ -33,14 +33,14 @@
         <div class="container">
           <div class="header-navigation__list">
             <li>
-              <a href="./home.html" style="border-bottom: 5px solid red"
+              <a href="./home.php" style="border-bottom: 5px solid red"
                 >Home</a
               >
             </li>
-            <li><a href="./news.html">News</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="./our-staff.html">Our Staff</a></li>
-            <li><a href="./loginform.html">Join Us</a></li>
+            <li><a href="./news.php">News</a></li>
+            <li><a href="./about.php">About Us</a></li>
+            <li><a href="./our-staff.php">Our Staff</a></li>
+            <li><a href="./loginform.php">Join Us</a></li>
           </div>
         </div>
       </div>

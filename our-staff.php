@@ -31,15 +31,15 @@
       <div class="bg-blue">
         <div class="container">
           <div class="header-navigation__list">
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./news.html">News</a></li>
-            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./home.php">Home</a></li>
+            <li><a href="./news.php">News</a></li>
+            <li><a href="./about.php">About Us</a></li>
             <li>
-              <a href="./contact.html" style="border-bottom: 5px solid red"
+              <a href="./contact.php" style="border-bottom: 5px solid red"
                 >Our Staff</a
               >
             </li>
-            <li><a href="./loginform.html">Join Us</a></li>
+            <li><a href="./loginform.php">Join Us</a></li>
           </div>
         </div>
       </div>
